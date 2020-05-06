@@ -1,0 +1,120 @@
+<html>
+<head>
+    <style>
+
+        h1 {
+            color: orange;
+            font-size: 50px;
+            text-align: right;
+            padding: 0;
+            margin: 25px;
+        }
+        
+        
+        ul {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            background-color: rgba(14, 68, 104,1.0);
+            font-family: sans-serif;
+        }
+        
+        li {
+            float: left;
+            font-weight: bold;
+        }
+        
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        li a:hover {
+            color: white;
+            background-color: rgba(22, 113, 183, 0.9);
+        } 
+        
+        .dropdown:hover .drop{
+            color: white;
+            background-color: rgba(20, 85, 130);
+        }
+        
+        li.dropdown{
+             display: inline block;
+        }
+        
+        .drop_table {
+              display: none;
+              position: absolute;
+              background-color: white;
+              box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.7);
+              z-index: 1;
+        }
+        
+        .drop_table a {
+              color: black;
+              padding: 20px;
+              display: inline block;
+        }
+        
+        .dropdown:hover .drop_table {
+            display: block;
+        }
+        
+        </style>
+
+<title>Sakila Database</title>
+</head>
+<body scroll="no" style="overflow: hidden">
+
+
+<h1>Sakila<img src="images/pika.jpg" width = "90" height = "75" style="vertical-align:bottom"> </h1><br>
+
+<ul>
+  <li class = "dropdown">
+    <a href="javascript:void(0)" class="drop">View Tables</a>
+    <div class="drop_table">
+      <a href="actor.php">Actor</a>
+      <a href="address.php">Address</a>
+      <a href="category.php">Category</a>
+  	  <a href="city.php">City</a>
+  	  <a href="country.php">Country</a>
+  	  <a href="customer.php">Customer</a>
+  	  <a href="film.php">Film</a>
+  	  <a href="film_actor.php">Film Actor</a>
+  	  <a href="film_category.php">Film Category</a>
+  	  <a href="inventory.php">Inventory</a>
+  	  <a href="language.php">Language</a>
+  	  <a href="payment.php">Payment</a>
+  	  <a href="rental.php">Rental</a>
+  	  <a href="staff.php">Staff</a>
+  	  <a href="store.php">Store</a>
+    </div>
+    </div>
+  </li>
+</ul>
+        
+        <img id="image" src="images/poke1.png" width = "100%" >
+
+        <script type = "text/javascript">
+            var image = document.getElementById("image");
+            var currentPos = 0;
+            var images = ["images/poke1.png", "images/poke2.jpg", "images/poke3.jpg"]
+
+            function volgendefoto() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+            }
+
+            setInterval(volgendefoto, 3000);
+        </script>
+</body>
+</html>
+    	

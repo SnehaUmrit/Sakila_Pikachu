@@ -1,0 +1,135 @@
+<style>
+		@media only screen and (max-width: 480px) {
+			/* horizontal scrollbar for tables if mobile screen */
+		.tablemobile {
+			overflow-x: auto;
+			display: block;
+		}
+	}
+	
+	.insert {
+		font-size: 15;	
+		font-family: sans serif;
+	}
+	
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		color: black;
+		font-family: sans-serif;
+		font-size: 15px;
+		text-align:left;
+		margin-top: 10px;
+	  }   
+	
+	h1 {
+		background-color: white;
+     	padding: 3px;
+      	text-align: center;
+      	font-size: 50px;
+      	color: rgb(14, 68, 104);
+      	font-weight: lighter;
+      	font-family: impact,sans-serif;
+	}
+			
+	th {
+		text-align: left;
+   		background-color: rgb(14, 68, 104);
+   		color: white;
+   		font-weight: bold;
+   		font-size: 15px;
+   		padding: 12px 15px;
+   		border: 2px solid black;
+	}
+	
+	td {
+		border: solid slategray;
+		border-width: thin;
+		padding: 10px;
+	}
+			
+	tr:nth-child(odd) {
+		background-color: rgb(188, 198, 202);
+	}
+	
+	tr:nth-child(even) {
+		background-color: white;
+	}
+
+button{
+		background-color: rgb(14, 68, 104);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+		font-weight: bold;
+		font-size: 13px;
+		margin: 3px;
+}
+
+button:hover{
+	opacity:0.5;
+}
+
+input[type=submit] {
+	background-color: rgb(14, 68, 104);
+	color:white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;	
+	font-weight: bold;
+	font-size: 13px;
+	margin: 3px;
+	margin-right: 9px;
+	float:left;
+  }
+
+input[type="submit"]:hover {
+opacity: 0.5;
+  }
+
+h2{
+	background-color: white;
+	padding: 7px;
+	text-align:left;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-family: sans-serif;
+	margin-bottom:0;
+}
+
+h3 {
+	margin-top: 0;
+	background-color: white;
+	padding: 7px;
+	text-align:left;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-weight: lighter;
+	font-family: sans-serif;
+}
+
+input[type=checkbox]{
+  transform: scale(1.5);
+  padding: 20px;
+  vertical-align: text-top; 
+}
+
+p.a{
+	margin-top: 0;
+	margin-bottom: 0;
+	white-space: pre;
+}
+
+label{
+  font-size: 100%;
+  display: inline;
+  vertical-align: text-top; 
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+</style>
